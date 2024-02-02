@@ -12,7 +12,7 @@ jobs:
 
     steps:
 
-    - run: systemctl stop crudv7.service
+    - run: sudo systemctl stop crudv7.service
 
     - uses: actions/checkout@v2
 
@@ -25,4 +25,4 @@ jobs:
     - name: Build and Publish
       run: dotnet publish -c Release -o out
 
-    - run: systemctl start crudv7.service
+    - run: sudo systemctl start crudv7.service
