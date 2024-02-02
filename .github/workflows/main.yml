@@ -11,6 +11,9 @@ jobs:
     runs-on: self-hosted
 
     steps:
+
+    - run: systemctl stop crudv7.service
+
     - uses: actions/checkout@v2
 
     - name: Setup .NET Core
@@ -22,6 +25,4 @@ jobs:
     - name: Build and Publish
       run: dotnet publish -c Release -o out
 
-    # Passos adicionais para deploy (se necessário)
-    # - name: Deploy to Server
-    #   run: <comando para deploy>
+    - run: systemctl start crudv7.service
