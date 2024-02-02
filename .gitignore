@@ -1,0 +1,63 @@
+# Arquivos de build e diretórios
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Arquivos de configuração do IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# Arquivos de saída
+*.nupkg
+*.snupkg
+*.dll
+*.exe
+*.pdb
+*.cache
+*.vsp
+*.swp
+*.[Bb]ak
+*.[Tt]mp
+
+# Pasta de pacotes NuGet (descomente se não estiver usando a restauração automática)
+# !.NET Core e .NET 5+ não precisam disso graças ao gerenciamento global de pacotes
+# packages/
+
+# Arquivos e pastas relacionados a ferramentas de desenvolvimento
+.idea/
+*.swp
+*~
+*.swp
+*.un~
+
+# Arquivos específicos de runtime
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+
+# Arquivos e diretórios relacionados ao banco de dados
+*.mdf
+*.ldf
+*.sqlite
+
+# Dependências Node (se o seu projeto tiver uma parte de frontend)
+node_modules/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de build especiais
+*.mo
+*.dat
+*.opendb
+*.pidb
+*.db-shm
+*.db-wal
+*.migrate
